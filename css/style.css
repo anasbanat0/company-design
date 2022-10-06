@@ -179,3 +179,93 @@ header > section > p {
   align-items: center;
   text-align: center;
 }
+
+.services .services-info > section > i {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 60px;
+  background-color: #fff;
+  color: #037cff;
+  border-radius: 50%;
+}
+
+.services .services-info > section > span {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 7px;
+}
+
+.services .services-info > section > p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #868686;
+}
+
+/* PROJECTS SECTION */
+.projects {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.projects > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 70px;
+}
+
+.projects > .container > span {
+  color: #037cff;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.projects .projects-info {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.projects .projects-info > .card{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(169, 207, 252, 10%);
+  row-gap: 20px;
+  border-radius: 7px;
+}
+
+.projects .projects-info > .card > .card-header{
+  flex: 1;
+}
+
+.projects .projects-info > .card > .card-header > img {
+  width: 100%;
+}
+
+.projects .projects-info > .card > .card-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 0 10px 20px;
+}
+
+.card > .card-body > span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card > .card-body > p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #707070;
+}
+
+.card > .card-body > a {
+  font-size: 18px;
+  color: #037cff;
+  font-weight: bold;
+}
