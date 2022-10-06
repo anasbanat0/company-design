@@ -70,7 +70,11 @@ nav > ul > li > a:hover {
 /* HEADER SECTION */
 
 header {
-  background-image: linear-gradient(rgba(3, 124, 255, 27%), rgba(3, 124, 255, 27%)), url(../images/slider.png);
+  background-image: linear-gradient(
+      rgba(3, 124, 255, 27%),
+      rgba(3, 124, 255, 27%)
+    ),
+    url(../images/slider.png);
   background-position: center;
   background-size: cover;
   height: calc(100vh - 112px);
@@ -101,7 +105,7 @@ header > section > h2 {
 
 header > section > p {
   font-weight: 400;
-  font-size: .6em;
+  font-size: 0.6em;
 }
 
 /* ABOUT SECTION */
@@ -230,7 +234,7 @@ header > section > p {
   column-gap: 30px;
 }
 
-.projects .projects-info > .card{
+.projects .projects-info > .card {
   display: flex;
   flex-direction: column;
   background-color: rgba(169, 207, 252, 10%);
@@ -238,7 +242,7 @@ header > section > p {
   border-radius: 7px;
 }
 
-.projects .projects-info > .card > .card-header{
+.projects .projects-info > .card > .card-header {
   flex: 1;
 }
 
@@ -361,7 +365,7 @@ header > section > p {
   border: none;
   outline: none;
   padding: 10px 0 0 10px;
-  color:#037cff;
+  color: #037cff;
   border-radius: 7px;
   resize: none;
   width: 100%;
@@ -383,4 +387,813 @@ footer {
 
 footer > p > a {
   color: #fff;
+}
+
+@media (max-width: 400px) {
+  .btn {
+    padding: 8px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* NAVIGATION SECTION */
+
+  nav {
+    padding: 5px 5px;
+  }
+
+  nav > a {
+    font-size: 10px;
+  }
+  nav > a > img {
+    width: 20px;
+  }
+
+  nav > ul > li > a {
+    padding: 0 7px;
+    color: #707070;
+    font-size: 10px;
+  }
+
+  header {
+    height: calc(100vh - 60px);
+  }
+
+  header > section {
+    width: 100%;
+    padding: 0 30px;
+    font-size: 20px;
+    row-gap: 20px;
+  }
+
+  header > section > h2 {
+    font-weight: 100;
+    font-size: 1em;
+  }
+
+  header > section > p {
+    font-size: 0.8em;
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+
+  .about > .container {
+    flex-direction: column;
+  }
+
+  .about > .container > .img > img {
+    width: 100%;
+  }
+
+  .about > .container > .about-info {
+    flex: 1;
+    row-gap: 10px;
+  }
+
+  .about > .container > .about-info > span {
+    font-size: 25px;
+  }
+
+  .about > .container > .about-info > p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .services {
+    padding: 50px 0;
+  }
+
+  .services > .container {
+    row-gap: 30px;
+  }
+
+  .services > .container > span {
+    font-size: 25px;
+  }
+
+  .services > .container > .services-info {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .services .services-info > section > i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+  }
+
+  .services .services-info > section > span {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .services .services-info > section > p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .projects {
+    padding: 50px 0;
+  }
+
+  .projects > .container {
+    row-gap: 30px;
+  }
+
+  .projects > .container > span {
+    font-size: 25px;
+  }
+
+  .projects .projects-info {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .projects .projects-info > .card {
+    row-gap: 10px;
+  }
+
+  .projects .projects-info > .card > .card-body {
+    row-gap: 10px;
+    padding: 0 7px 15px;
+  }
+
+  .card > .card-body > span {
+    font-size: 18px;
+  }
+
+  .card > .card-body > p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card > .card-body > a {
+    font-size: 16px;
+  }
+
+  .clients {
+    padding: 50px 0;
+  }
+
+  .clients > .container {
+    row-gap: 30px;
+  }
+
+  .clients > .container > span {
+    font-size: 25px;
+  }
+
+  .clients .clients-info > figure > img {
+    width: 100px;
+  }
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .contact > .container {
+    row-gap: 30px;
+  }
+
+  .contact > .container > span {
+    font-size: 25px;
+  }
+
+  .contact form {
+    row-gap: 15px;
+  }
+
+  .contact form > .form-group {
+    row-gap: 15px;
+  }
+
+  .contact form > .form-group > input {
+    min-width: 260px;
+    height: 40px;
+  }
+
+  .contact form > textarea {
+    min-width: 260px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .btn {
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  nav {
+    padding: 5px;
+  }
+
+  nav > a {
+    font-size: 12px;
+  }
+  nav > a > img {
+    width: 30px;
+  }
+
+  nav > ul > li > a {
+    padding: 0 5px;
+    color: #707070;
+    font-size: 12px;
+  }
+
+  header {
+    height: 50vh;
+  }
+
+  header > section {
+    width: 100%;
+    padding: 0 30px;
+    font-size: 23px;
+    row-gap: 20px;
+  }
+
+  header > section > h2 {
+    font-weight: 100;
+    font-size: 1em;
+  }
+
+  header > section > p {
+    font-size: 0.8em;
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+
+  .about > .container {
+    flex-direction: column;
+  }
+
+  .about > .container > .img > img {
+    width: 100%;
+  }
+
+  .about > .container > .about-info {
+    flex: 1;
+    row-gap: 10px;
+  }
+
+  .about > .container > .about-info > span {
+    font-size: 25px;
+  }
+
+  .about > .container > .about-info > p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .services {
+    padding: 50px 0;
+  }
+
+  .services > .container {
+    row-gap: 30px;
+  }
+
+  .services > .container > span {
+    font-size: 25px;
+  }
+
+  .services > .container > .services-info {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .services .services-info > section > i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 35px;
+  }
+
+  .services .services-info > section > span {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .services .services-info > section > p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .projects {
+    padding: 50px 0;
+  }
+
+  .projects > .container {
+    row-gap: 30px;
+  }
+
+  .projects > .container > span {
+    font-size: 25px;
+  }
+
+  .projects .projects-info {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .projects .projects-info > .card {
+    row-gap: 10px;
+  }
+
+  .projects .projects-info > .card > .card-body {
+    row-gap: 10px;
+    padding: 0 7px 15px;
+  }
+
+  .card > .card-body > span {
+    font-size: 18px;
+  }
+
+  .card > .card-body > p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .card > .card-body > a {
+    font-size: 16px;
+  }
+
+  .clients {
+    padding: 50px 0;
+  }
+
+  .clients > .container {
+    row-gap: 30px;
+  }
+
+  .clients > .container > span {
+    font-size: 25px;
+  }
+
+  .clients .clients-info > figure > img {
+    width: 120px;
+  }
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .contact > .container {
+    row-gap: 30px;
+  }
+
+  .contact > .container > span {
+    font-size: 25px;
+  }
+
+  .contact form {
+    row-gap: 15px;
+  }
+
+  .contact form > .form-group {
+    row-gap: 15px;
+  }
+
+  .contact form > .form-group > input {
+    min-width: 260px;
+    height: 40px;
+  }
+
+  .contact form > textarea {
+    min-width: 260px;
+  }
+
+  footer {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+  .btn {
+    padding: 11px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  nav {
+    padding: 7px 8px;
+  }
+
+  nav > a {
+    font-size: 15px;
+  }
+  nav > a > img {
+    width: 40px;
+  }
+
+  nav > ul > li > a {
+    padding: 0 8px;
+    color: #707070;
+    font-size: 14px;
+  }
+
+  header {
+    height: 50vh;
+  }
+
+  header > section {
+    width: 100%;
+    padding: 0 30px;
+    font-size: 23px;
+    row-gap: 20px;
+  }
+
+  header > section > h2 {
+    font-weight: 100;
+    font-size: 1em;
+  }
+
+  header > section > p {
+    font-size: 0.8em;
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+
+  .about > .container {
+    flex-direction: column;
+  }
+
+  .about > .container > .img {
+    width: 100%;
+  }
+
+  .about > .container > .img > img {
+    width: 100%;
+  }
+
+  .about > .container > .about-info {
+    flex: 1;
+    row-gap: 10px;
+  }
+
+  .about > .container > .about-info > span {
+    font-size: 25px;
+  }
+
+  .about > .container > .about-info > p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .services {
+    padding: 50px 0;
+  }
+
+  .services > .container {
+    row-gap: 30px;
+  }
+
+  .services > .container > span {
+    font-size: 25px;
+  }
+
+  .services > .container > .services-info {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .services .services-info > section > i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 35px;
+  }
+
+  .services .services-info > section > span {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .services .services-info > section > p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .projects {
+    padding: 50px 0;
+  }
+
+  .projects > .container {
+    row-gap: 30px;
+  }
+
+  .projects > .container > span {
+    font-size: 25px;
+  }
+
+  .projects .projects-info {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .projects .projects-info > .card {
+    row-gap: 10px;
+  }
+
+  .projects .projects-info > .card > .card-body {
+    row-gap: 10px;
+    padding: 0 7px 15px;
+  }
+
+  .card > .card-body > span {
+    font-size: 18px;
+  }
+
+  .card > .card-body > p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .card > .card-body > a {
+    font-size: 16px;
+  }
+
+  .clients {
+    padding: 50px 0;
+  }
+
+  .clients > .container {
+    row-gap: 30px;
+  }
+
+  .clients > .container > span {
+    font-size: 25px;
+  }
+
+  .clients .clients-info > figure > img {
+    width: 150px;
+  }
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .contact > .container {
+    row-gap: 30px;
+  }
+
+  .contact > .container > span {
+    font-size: 25px;
+  }
+
+  .contact form {
+    row-gap: 15px;
+  }
+
+  .contact form > .form-group {
+    row-gap: 15px;
+  }
+
+  .contact form > .form-group > input {
+    min-width: 260px;
+    height: 40px;
+  }
+
+  .contact form > textarea {
+    min-width: 260px;
+  }
+
+  footer {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  .btn {
+    padding: 12px 35px;
+    border-radius: 7px;
+    font-size: 17px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  nav {
+    padding: 10px 12px;
+  }
+
+  nav > a {
+    font-size: 18px;
+  }
+  nav > a > img {
+    width: 50px;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    color: #707070;
+    font-size: 16px;
+  }
+
+  header {
+    height: 50vh;
+  }
+
+  header > section {
+    width: 100%;
+    padding: 0 30px;
+    font-size: 27px;
+    row-gap: 20px;
+  }
+
+  header > section > h2 {
+    font-weight: 100;
+    font-size: 1em;
+  }
+
+  header > section > p {
+    font-size: 0.7em;
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+
+  .about > .container {
+    flex-direction: column;
+  }
+
+  .about > .container > .img {
+    width: 100%;
+  }
+
+  .about > .container > .img > img {
+    width: 100%;
+  }
+
+  .about > .container > .about-info {
+    flex: 1;
+    row-gap: 10px;
+  }
+
+  .about > .container > .about-info > span {
+    font-size: 25px;
+  }
+
+  .about > .container > .about-info > p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .services {
+    padding: 50px 0;
+  }
+
+  .services > .container {
+    row-gap: 40px;
+  }
+
+  .services > .container > span {
+    font-size: 25px;
+  }
+
+  .services > .container > .services-info {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .services .services-info > section > i {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 55px;
+  }
+
+  .services .services-info > section > span {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .services .services-info > section > p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .projects {
+    padding: 50px 0;
+  }
+
+  .projects > .container {
+    row-gap: 40px;
+  }
+
+  .projects > .container > span {
+    font-size: 25px;
+  }
+
+  .projects .projects-info {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .projects .projects-info > .card {
+    row-gap: 10px;
+  }
+
+  .projects .projects-info > .card > .card-body {
+    row-gap: 10px;
+    padding: 0 10px 20px;
+  }
+
+  .card > .card-body > span {
+    font-size: 20px;
+  }
+
+  .card > .card-body > p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card > .card-body > a {
+    font-size: 18px;
+  }
+
+  .clients {
+    padding: 50px 0;
+  }
+
+  .clients > .container {
+    row-gap: 40px;
+  }
+
+  .clients > .container > span {
+    font-size: 25px;
+  }
+
+  .clients .clients-info > figure > img {
+    width: 200px;
+  }
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .contact > .container {
+    row-gap: 40px;
+  }
+
+  .contact > .container > span {
+    font-size: 25px;
+  }
+
+  .contact form {
+    row-gap: 20px;
+  }
+
+  .contact form > .form-group {
+    row-gap: 20px;
+  }
+
+  .contact form > .form-group > input {
+    min-width: 260px;
+    height: 45px;
+  }
+
+  .contact form > textarea {
+    min-width: 260px;
+  }
+
+  footer {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1081px) and (max-width: 1500px) {
+  header > section {
+    width: 80%;
+  }
 }
